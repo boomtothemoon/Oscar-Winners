@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Winnerid:</strong>
+  <%= @oscare_male_winner.winnerId %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @oscare_male_winner.year %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @oscare_male_winner.age %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @oscare_male_winner.name %>
+</p>
+
+<p>
+  <strong>Movie:</strong>
+  <%= @oscare_male_winner.movie %>
+</p>
+
+<%= link_to 'Edit', edit_oscare_male_winner_path(@oscare_male_winner) %> |
+<%= link_to 'Back', oscare_male_winners_path %>

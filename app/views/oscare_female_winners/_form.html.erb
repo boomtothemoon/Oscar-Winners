@@ -1,0 +1,42 @@
+<%= form_with(model: oscare_female_winner, local: true) do |form| %>
+  <% if oscare_female_winner.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(oscare_female_winner.errors.count, "error") %> prohibited this oscare_female_winner from being saved:</h2>
+
+      <ul>
+      <% oscare_female_winner.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :winnerId %>
+    <%= form.number_field :winnerId, id: :oscare_female_winner_winnerId %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.number_field :year, id: :oscare_female_winner_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age, id: :oscare_female_winner_age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :oscare_female_winner_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :movie %>
+    <%= form.text_field :movie, id: :oscare_female_winner_movie %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

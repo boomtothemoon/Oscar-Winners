@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Winnerid:</strong>
+  <%= @oscare_female_winner.winnerId %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @oscare_female_winner.year %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @oscare_female_winner.age %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @oscare_female_winner.name %>
+</p>
+
+<p>
+  <strong>Movie:</strong>
+  <%= @oscare_female_winner.movie %>
+</p>
+
+<%= link_to 'Edit', edit_oscare_female_winner_path(@oscare_female_winner) %> |
+<%= link_to 'Back', oscare_female_winners_path %>

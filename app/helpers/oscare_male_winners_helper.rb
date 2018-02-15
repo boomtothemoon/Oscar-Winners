@@ -1,0 +1,2 @@
+module OscareMaleWinnersHelper
+end

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Oscare Female Winners</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Winnerid</th>
+      <th>Year</th>
+      <th>Age</th>
+      <th>Name</th>
+      <th>Movie</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @oscare_female_winners.each do |oscare_female_winner| %>
+      <tr>
+        <td><%= oscare_female_winner.winnerId %></td>
+        <td><%= oscare_female_winner.year %></td>
+        <td><%= oscare_female_winner.age %></td>
+        <td><%= oscare_female_winner.name %></td>
+        <td><%= oscare_female_winner.movie %></td>
+        <td><%= link_to 'Show', oscare_female_winner %></td>
+        <td><%= link_to 'Edit', edit_oscare_female_winner_path(oscare_female_winner) %></td>
+        <td><%= link_to 'Destroy', oscare_female_winner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Oscare Female Winner', new_oscare_female_winner_path %>
